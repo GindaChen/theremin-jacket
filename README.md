@@ -1,12 +1,10 @@
-# Project Post 2 
-
-`@Postdate: Mar 9th (Sat)`
+# Project Post 4
 
 
 
 ## Project Title
 
-Theremin Jacket
+Velcro MIDI Jacket
 
 
 
@@ -16,81 +14,73 @@ Junda Chen, Jeff Ma, Yudong Huang, William Black
 
 
 
-## Major aspects for Development
-
-- Sensor
-  - Sonar Sensor
-  - Leap Motion
-- Arduino/Other interface & Software Design
-  - MIDI Software
-  - Storage
-  - Data Transfer
-- Clothes Design
-  - Sensor/Leapmotion embedding
-  - Light Design
-    - LED
-    - Covering Material / Defussing material (Potentially)
-  - Jacket
-
-
-
 ## Weekly Accomplishments
 
-- [x] Setup sonar sensor tracking in Arduino Mega.
-- [x] Use sonar sensor to build a prototypical MIDI device.
-- [x] Leap Motion Mechanism
-  - [x] How leap motion works, Accuracy, General application
-  - [x] HW and SW. Compatilibility to IoT Devicess
-- [ ] 3D PrintLeap Motion case
-- [ ] First software prototype for theremin
-  - [ ] Motion trace: proximity and height change
-  - [ ] Data Transfer and MIDI encode/decode
-  - [ ] Run on Arduino/Raspberry pi
-  - [ ] (Optimization) De-noise.
-- [ ] Select a jacket.
-- [ ] Design the jacket.
-
-
+- [ ] 3D Print Leap Motion case
+  - [ ] Make the leap motion case tilted when designed so as to support it — making it not to face downs
+  - [ ] Search for a model
+    - [ ] https://www.thingiverse.com/thing:202030
+    - [ ] https://www.thingiverse.com/thing:1535393
+    - [ ] https://www.thingiverse.com/thing:2058792
+    - [ ] https://www.thingiverse.com/thing:124968
+  - [ ] if not, build a models
+  - [ ] Print the model in Makerspace
+- [ ] Theremn Software
+  - [x] Motion trace: proximity and height change
+  - [x] Data Transfer 
+  - [x] Theremin instrumental voice
+    - [ ] <https://www.youtube.com/watch?v=6S86PbXtCNM>
+  - [ ] (Optimize) Range Detection
+  - [ ] (Optimize) Position to put the Leap Motion on the Jacket
+  - [ ] Run on Arduino
+  - [x] Run on Raspberry Pi 3+
+- [x] Leap Motion Optimization
+  - [x] Add an infrared light source to
+  - [x] Determine where the light should be
+    - [x] On Jacket
+- [x] Jacket
+  - [ ] Select a light
+  - [ ] Select a 散射材料
+    - [ ] Sheer from underneath
+  - [ ] Select a jacket.
+  - [x] ==Design the jacket: There are an ongoing debate on how the jacket should be designed.==
+    - [x] Velcro **Hoodie?** — Have all the things in the velcro and stick waistband to the velcro on the Hoodie.
+  - [x] Design the light effect of the jacket
 
 ## Image/Video
 
-![Leap Motion Sensing Spectrum](assets/Leap Motion Sensing Spectrum.png)
 
-
-
-## Changes to our approach
-
-We originally want to design the primitive circuit and sensors to make the sensing work. William has just worked out the sonar in wednesday, and as a backup plan and primitive approach we will design a theremin using the sonar sensors and integrate it as a part of jacket.
-
-In search for potential improvement of gesture recognition, we also focus our attention on Leap Motion. On leap motion, we're able to capture richer and more sensive gesture information — able to grab, tremble, drastically move up and down, within its well-defined range of service. 
 
 
 
 ## Material list
 
-
-
-- [ ] Circuit Board: (Potentially) MIDI encode/decoder, Leap motion image processor, 
-  - [ ] ~~Arduion (1):~~
+- [x] Circuit Board: (Potentially) MIDI encode/decoder, Leap motion image processor,
+  - [x] ~~Arduion (1):~~
   - [x] Circuit Playground (1)
-  - [ ] [Raspberry Pi 3B +](https://www.amazon.com/ELEMENT-Element14-Raspberry-Pi-Motherboard/dp/B07BDR5PDW/ref=sr_1_3?crid=130OBI1IAILPI&keywords=raspberry+pi+3+b%2B&qid=1552169577&s=electronics&sprefix=raspberry+pi%2Celectronics%2C139&sr=1-3) (1, with toolkits): $30-50
-- [ ] [Leap Motion](https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO/ref=pd_rhf_gw_p_tnr_1) (1): $96
+  - [x] [Raspberry Pi 3B +](https://www.amazon.com/ELEMENT-Element14-Raspberry-Pi-Motherboard/dp/B07BDR5PDW/ref=sr_1_3?crid=130OBI1IAILPI&keywords=raspberry+pi+3+b%2B&qid=1552169577&s=electronics&sprefix=raspberry+pi%2Celectronics%2C139&sr=1-3) (1, with toolkits): $30-50
+- [x] [Leap Motion](https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO/ref=pd_rhf_gw_p_tnr_1) (1): $96
 - [ ] LED Strip light (2, TBD)
+- [ ] Black velcro fabric (we have in the studio)
 - [ ] A Jacket (1, TBD)
+- [ ] (Safe) Infrared LED (20)
 
 
 
 
 
-------
+## Areas of Concern
+
+- [ ] **Infrared LED Safety to eye**: To design a better tracking of hand while not directly influence users’ eye is a design challenge, and that might require some research in the [area](https://biology.stackexchange.com/questions/13691/is-it-safe-to-look-at-infrared-leds).
 
 
 
-## Development Log
 
-[Cylon.js](https://cylonjs.com/documentation/examples/cylon/annotated/leap_arduino/): an arduino API to control the leap motion
 
-[Adafruit strip LED](https://www.adafruit.com/product/2824?length=1) : a $17.99 
+## Past Development Log
 
-Leap Motion installation: Trouble shooting in Windows.
+[Cylon.js](https://cylonjs.com/documentation/examples/cylon/annotated/leap_arduino/): an Arduino API to control the leap motion
 
+[Adafruit strip LED](https://www.adafruit.com/product/2824?length=1) : a $17.99
+
+Leap Motion installation: Troubleshooting in Windows.
