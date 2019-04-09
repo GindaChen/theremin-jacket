@@ -1,10 +1,10 @@
-# Project Post 4
+# Project Post 5
 
 
 
 ## Project Title
 
-Velcro MIDI Jacket
+Velcro Theremin Jacket
 
 
 
@@ -39,10 +39,10 @@ Junda Chen, Jeff Ma, Yudong Huang, William Black
   - [x] Determine where the light should be
     - [x] On Jacket
 - [x] Jacket
-  - [ ] Select a light
-  - [ ] Select a 散射材料
-    - [ ] Sheer from underneath
-  - [ ] Select a jacket.
+  - [x] Select a light
+  - [x] Select a 散射材料
+    - [x] Sheer from underneath
+  - [x] Select a jacket.
   - [x] ==Design the jacket: There are an ongoing debate on how the jacket should be designed.==
     - [x] Velcro **Hoodie?** — Have all the things in the velcro and stick waistband to the velcro on the Hoodie.
   - [x] Design the light effect of the jacket
